@@ -1,0 +1,25 @@
+n=int(input())
+list=[]
+list1=[]
+for i in range(n):
+    x=int(input())
+    list.append(x)
+for i in list:
+    if i not in list1:
+        if list.count(i)==1:
+            list1.append(i)
+print(list1)
+
+OUTPUT:
+10
+1
+2
+3
+4
+5
+1
+6
+7
+3
+4
+[2, 5, 6, 7]
